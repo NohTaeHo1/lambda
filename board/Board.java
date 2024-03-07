@@ -7,26 +7,21 @@ import java.util.Date;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@ToString
+@ToString(exclude = {"id"})
 
 
 
 public class Board {
-    //private int id;
-    private String title;
-    //private String content;
-    private String writer;
-    private Date writeDate;
-    private int views;
-    private String prod;
+    private Long id;
+    private String boardName;
+    private String boardType;
+
 
 
     @Builder(builderMethodName = "builder")
-    public Board(String title, String content, String writer, Date writeDate, int views) {
-        this.title = title;
-        //this.content = content;
-        this.writer = writer;
-        this.writeDate = writeDate;
-        this.views = views;
+    public Board(Long id, String boardName, String boardType) {
+        //this.id = id;
+        this.boardName = boardName;
+        this.boardType = boardType;
     }
 }

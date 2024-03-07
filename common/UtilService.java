@@ -12,5 +12,5 @@ public interface UtilService {
     String createRandomCompany();
     String createRandomUsername();
     String createRandomJob();
-
+    public Long createRandomLong();
 }

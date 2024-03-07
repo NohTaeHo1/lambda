@@ -30,4 +30,5 @@ public class CrawlerServiceImpl implements CrawlerService {
     public Map<String,?> findMelonFromWeb(Map<String, String> paramMap) throws IOException {
         return repository.saveMelon(paramMap);
     }
+
 }

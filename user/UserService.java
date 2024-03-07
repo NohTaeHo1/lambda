@@ -1,8 +1,10 @@
 package user;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Scanner;
 
 
 public interface UserService {
@@ -19,4 +21,10 @@ public interface UserService {
     String countUsers();
 
     Map<String, ?> getUserMap();
+
+    String test();
+
+    String findUser(Scanner sc);
+
+    List<?> findUsers() throws SQLException;
 }

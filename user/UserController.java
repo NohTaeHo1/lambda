@@ -5,6 +5,7 @@ import common.AbstractService;
 import user.UserService;
 import user.UserServiceImpl;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -64,5 +65,15 @@ public class UserController {
         return us.findUsersByJob(User.builder()
                 .job(sc.next())
                 .build());
+    }
+
+    public String test() {
+        return us.test();
+        //return UserRepository.getInstance().test();
+
+    }
+
+    public List<?> findUsers() throws SQLException {
+        return us.findUsers();
     }
 }

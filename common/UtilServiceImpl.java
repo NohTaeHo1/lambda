@@ -11,6 +11,9 @@ public class UtilServiceImpl implements UtilService {
         //0 이상 50 미만의 값을 생성하고 150을 더해줌으로써 키의 범위를 150 이상 200 미만으로 만듦
         return start + (int)(Math.random() * gapBetweenStartAndEnd);
     }
+    public Long createRandomLong() {
+        return (long) (Math.random() * 100);
+    }
 
     @Override
     public double createRandomDouble(int start, int gapBetweenStartAndEnd) {
