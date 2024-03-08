@@ -39,7 +39,7 @@ public class UserController {
                 .password(sc.next())
                 .passwordConfirm(sc.next())
                 .name(sc.next())
-                .address(sc.next())
+                //.address(sc.next())
                 .job(sc.next())
                 .build())
                 ;

@@ -33,7 +33,7 @@ public class AuthController{
                 .username(scanner.next())
                 .password(scanner.next())
                 .name(scanner.next())
-                .address(scanner.next())
+                //.address(scanner.next())
                 .job(scanner.next())
                 .build());
     }

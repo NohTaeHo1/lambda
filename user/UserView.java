@@ -18,10 +18,12 @@ public class UserView {
                     "3-ID검색\n " +
                     "4-비번변경\n " +
                     "5-탈퇴\n " +
-                    "6-회원목록\n " +
+                    "ls-회원목록\n " +
                     "7-이름검색\n " +
                     "8-직업검색\n " +
-                    "9-회원수\n ");
+                    "9-회원수\n " +
+                    "touch-테이블생성" +
+                    "rm-테이블삭제");
             switch (sc.next()) {
                 case "0":
                     System.out.println("종료");
@@ -52,12 +54,20 @@ public class UserView {
                     break;
                 case "8":
                     System.out.println("=== 직업검색 ===");
-                    System.out.println("검색완료\n"+uc.findUsersByJob(sc));
+                    System.out.println("검색완료\n" + uc.findUsersByJob(sc));
                     break;
                 case "9":
                     System.out.println("=== 회원수 ===");
                     String userCount = uc.countUsers();
                     System.out.println("회원수 : " + userCount);
+                    return;
+                case "touch":
+                    System.out.println("=== 테이블 생성 ===");
+                    System.out.println("회원테이블 생성 성공");
+                    return;
+                case "rm":
+                    System.out.println("=== 테이블 삭제 ===");
+                    System.out.println("회원테이블 삭제 성공");
                     return;
             }
         }

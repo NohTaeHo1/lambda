@@ -14,22 +14,19 @@ public class User {
     private String passwordConfirm;
     private String password;
     private String name;
-    private String ssn;
-    private String phoneNumber;
-    private String address;
+    private String phone;
+    private Long addressId;
     private String job;
     private double height;
     private double weight;
 
     @Builder(builderMethodName = "builder")
-    public User(String username, String passwordConfirm, String password, String name, String ssn, String phoneNumber, String address, String job, double height, double weight) {
+    public User(String username, String passwordConfirm, String password, String name, String phoneNumber, String job, double height, double weight) {
         this.username = username;
         this.passwordConfirm = passwordConfirm;
         this.password = password;
         this.name = name;
-        this.ssn = ssn;
-        this.phoneNumber = phoneNumber;
-        this.address = address;
+        this.phone = phoneNumber;
         this.job = job;
         this.height = height;
         this.weight = weight;
