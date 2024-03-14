@@ -1,10 +1,7 @@
 package com.von.api.user;
 
 
-import com.von.api.common.AbstractService;
 import com.von.api.enums.Messenger;
-import com.von.api.user.UserService;
-import com.von.api.user.UserServiceImpl;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -13,7 +10,6 @@ import java.util.Optional;
 import java.util.Scanner;
 
 public class UserController {
-
     private static UserController instance = new UserController();
     UserServiceImpl us;
     private UserController() {
@@ -32,7 +28,6 @@ public class UserController {
         return null;
 
     }
-
     public String join(Scanner sc) {
         System.out.println("ID, 비밀번호, 비밀번호 확인, " +
                 "이름, 주민번호 전화번호, " +

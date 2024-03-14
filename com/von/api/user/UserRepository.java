@@ -1,11 +1,9 @@
 package com.von.api.user;
 
-import com.von.api.crawler.CrawlerRepository;
 import com.von.api.enums.Messenger;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class UserRepository {
@@ -17,7 +15,6 @@ public class UserRepository {
                 "root",
                 "rootroot");
     }
-
     ;
     private static UserRepository instance;
 

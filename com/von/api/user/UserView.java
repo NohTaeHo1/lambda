@@ -3,14 +3,8 @@ package com.von.api.user;
 import com.von.api.enums.UserRouter;
 
 import java.sql.SQLException;
-import java.util.Arrays;
 import java.util.Scanner;
-import java.util.function.Consumer;
 
-enum UserV {
-
-
-}
 
 public class UserView {
     public static void main(Scanner sc) throws SQLException {
